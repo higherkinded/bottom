@@ -1,0 +1,15 @@
+# Black hole
+node_modules
+
+# Emacs
+*~*
+*#*
+
+# Distribution files
+dist/
+
+# Declaration pieces
+*.d.ts
+
+# Logs
+*.log

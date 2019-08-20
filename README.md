@@ -1,0 +1,79 @@
+Bottoms
+=======
+
+_A set of easily pluggable and extremely touchy empty definitions._
+
+## Naming
+
+The name is ripped off the Haskell's community's term for `undefined`. The idea
+partially comes from there as well &mdash; a polymorphic value that can be put
+anyplace to signify unimplemented functionality.
+
+## Motivation
+
+I've had a lot of situations where I had to implement some large module and had
+to write the `bottom` function myself just to plug something in place of
+implementation for some time. What was also quite important to it is to fend off
+any accidental uses by causing the `bottom` to throw exceptions. Being tired of
+rewriting this multiple time and, surprisingly, seeing no alternative
+implementations (at all), I've written this library. It covers use cases of both
+TypeScript bottom-related needs and JavaScript bottom-related needs.
+
+## How do I?
+
+So how to use it? In case of TypeScript functions, it will be...
+
+```typescript
+import { bottom, bottomFn } from 'bottom';
+
+
+// ...like this:
+const product: (...args: number[]) => number = bottom;
+
+
+// Or like this:
+const someComplexProcedure = <A, B, C, R>(a: A, b: B, c: C): R => {
+  /* 
+    ...
+    
+    Some partial implementation here
+    
+    ...
+  */
+  
+  return bottom();
+};
+
+
+// Or perhaps you want to carry the name?
+const namedFunction: <A, R>(a: A): R = bottomFn('namedFunction');
+
+
+// Also OK in return statement:
+const someNamedProcedure = <A, B, C, R>(a: A, b: B, c: C): R => {
+  /* 
+    ...
+    
+    Some partial implementation here
+    
+    ...
+  */
+  
+  return bottomFn('someNamedProcedure')();
+};
+```
+
+For classes, you have these options:
+
+```typescript
+import { Bottom, bottomMethod } from 'bottom';
+
+// Declared but unimplemented and uninstantiable class
+class Foo extends Bottom {
+
+  /* Bottom-ed method of a class, carrying the info about who they are and who
+     owns them. */
+  static someMethod = bottomMethod('someMethod', 'Foo');
+
+}
+```
