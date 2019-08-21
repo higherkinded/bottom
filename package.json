@@ -1,6 +1,6 @@
 {
   "name": "@higherkinded/bottom",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Simple stub factories reminiscent of undefined in Haskell",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

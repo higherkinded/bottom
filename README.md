@@ -2,15 +2,16 @@ Bottoms
 =======
 
 [![Check out on NPM](https://img.shields.io/bundlephobia/min/@higherkinded/bottom?color=green&label=bundle%20size&logo=npm)](https://www.npmjs.com/package/@higherkinded/bottom)
-[![Check out on NPM](https://img.shields.io/npm/v/@higherkinded/bottom/latest?logo=npm)](https://www.npmjs.com/package/@higherkinded/bottom)
-[![Typedefs](https://img.shields.io/npm/types/@higherkinded/bottom?color=%232299ff&label=%20&logo=typescript)](https://www.typescriptlang.org)
+[![Check out on
+NPM](https://img.shields.io/npm/v/@higherkinded/bottom/latest?logo=npm)](https://www.npmjs.com/package/@higherkinded/bottom)
 [![License](https://img.shields.io/github/license/higherkinded/bottom)](https://github.com/higherkinded/bottom/blob/master/LICENSE)
+[![Typedefs](https://img.shields.io/npm/types/@higherkinded/bottom?color=%232299ff&label=%20&logo=typescript)](https://www.typescriptlang.org)
 
 _A set of easily pluggable and extremely touchy empty definitions._
 
 ## Naming
 
-The name is ripped off the Haskell's community's term for `undefined`. The idea
+The name is ripped off the Haskell community's term for `undefined`. The idea
 partially comes from there as well &mdash; a polymorphic value that can be put
 anyplace to signify unimplemented functionality.
 
