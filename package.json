@@ -1,6 +1,6 @@
 {
   "name": "@higherkinded/bottom",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple stub factories reminiscent of undefined in Haskell",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -22,7 +22,6 @@
     "dist/index.js.map",
     "dist/index.d.ts"
   ],
-  "types": "dist/index.d.ts",
   "scripts": {
     "artifacts:pub": "npm run build && npm run clean && npm login && npm publish --access public",
     "artifacts:rm": "rm -r dist",

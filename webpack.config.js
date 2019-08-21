@@ -8,7 +8,7 @@ var PATHS = {
 };
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     bottom: join(PATHS.src, 'index.ts'),
   },
@@ -16,7 +16,7 @@ module.exports = {
   output: {
     path: PATHS.dist,
     filename: 'index.js',
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs-module',
     library: 'bottom',
   },
   devtool: 'source-map',
@@ -30,8 +30,7 @@ module.exports = {
     extensions: ['.ts'],
   },
   optimization: {
+    concatenateModules: false,
     minimize: true,
-    usedExports: true,
-    concatenateModules: true,
   },
 };
