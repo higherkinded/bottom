@@ -1,6 +1,11 @@
 Bottoms
 =======
 
+[![Check out on NPM](https://img.shields.io/bundlephobia/min/@higherkinded/bottom?color=green&label=bundle%20size&logo=npm)](https://www.npmjs.com/package/@higherkinded/bottom)
+[![Check out on NPM](https://img.shields.io/npm/v/@higherkinded/bottom/latest?logo=npm)](https://www.npmjs.com/package/@higherkinded/bottom)
+[![Typedefs](https://img.shields.io/npm/types/@higherkinded/bottom?color=%232299ff&label=%20&logo=typescript)](https://www.typescriptlang.org)
+[![License](https://img.shields.io/github/license/higherkinded/bottom)](https://github.com/higherkinded/bottom/blob/master/LICENSE)
+
 _A set of easily pluggable and extremely touchy empty definitions._
 
 ## Naming

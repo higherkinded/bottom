@@ -1,6 +1,6 @@
 {
   "name": "@higherkinded/bottom",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple stub factories reminiscent of undefined in Haskell",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,6 +9,14 @@
   "license": "BSD-3-Clause",
   "test": "jest",
   "private": false,
+  "keywords": [
+    "typescript",
+    "misc",
+    "mock",
+    "placeholder",
+    "undefined",
+    "micro library"
+  ],
   "files": [
     "dist/index.js",
     "dist/index.js.map",
