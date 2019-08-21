@@ -3,14 +3,14 @@ var path = require('path');
 var join = path.join;
 
 var PATHS = {
-  lib: join(__dirname, 'lib'),
+  src: join(__dirname, 'src'),
   dist: join(__dirname, 'dist'),
 };
 
 module.exports = {
   mode: 'development',
   entry: {
-    bottom: join(PATHS.lib, 'index.ts'),
+    bottom: join(PATHS.src, 'index.ts'),
   },
   output: {
     path: PATHS.dist,

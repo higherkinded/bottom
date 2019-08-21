@@ -8,8 +8,15 @@ node_modules
 # Distribution files
 dist/
 
+# Temp files
+temp/
+
+# Report files
+etc/
+
 # Declaration pieces
 *.d.ts
 
 # Logs
 *.log
+test/__snapshots__/

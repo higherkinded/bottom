@@ -10,15 +10,18 @@
   "test": "jest",
   "private": false,
   "scripts": {
-    "build": "npm run build:bundle && npm run build:declarations",
-    "build:declarations": "cp tsconfig.json lib && ./node_modules/.bin/dts-generator --project ./lib --out ./dist/bottom.d.ts && rm ./lib/tsconfig.json",
+    "build:safe": "npm run test:src",
+    "build:nonsafe": "npm run build:bundle && npm run build:declarations",
+    "build:declarations": "./node_modules/.bin/api-extractor run --local --verbose",
     "build:bundle": "./node_modules/.bin/webpack --display verbose",
-    "watch": "./node_modules/.bin/webpack -w --watch-poll 100 --display verbose",
+    "build:watch": "./node_modules/.bin/webpack -w --watch-poll 100 --display verbose",
+    "test:src": "./node_modules/.bin/jest --verbose",
     "clean": "(find . -name '*~*' -or -name '#*#' | xargs rm 2>&- 1>&-) || exit 0",
     "artifacts:rm": "rm -r dist",
     "artifacts:pub": "npm run clean && npm publish --access public"
   },
   "devDependencies": {
+    "@microsoft/api-extractor": "^7.3.8",
     "@types/jest": "^24.0.18",
     "awesome-typescript-loader": "^5.2.1",
     "dts-generator": "^3.0.0",

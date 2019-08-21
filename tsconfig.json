@@ -6,8 +6,11 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "declaration": true,
-    "baseUrl": "./lib",
+    "baseUrl": "./src",
   },
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": [
     "**/*.test.ts"
   ]

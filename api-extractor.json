@@ -1,0 +1,13 @@
+{
+  "mainEntryPointFilePath": "./src/index.d.ts",
+  "dtsRollup": {
+    "enabled": true,
+    "untrimmedFilePath": "./dist/bottom.d.ts",
+  },
+  "docModel": {
+    "enabled": false,
+  },
+  "apiReport": {
+    "enabled": true,
+  },
+}
