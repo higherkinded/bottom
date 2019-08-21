@@ -1,4 +1,4 @@
-Bottoms
+Bottom
 =======
 
 [![Check out on NPM](https://img.shields.io/bundlephobia/min/@higherkinded/bottom?color=green&label=bundle%20size&logo=npm)](https://www.npmjs.com/package/@higherkinded/bottom)
