@@ -2,7 +2,7 @@
   "mainEntryPointFilePath": "./src/index.d.ts",
   "dtsRollup": {
     "enabled": true,
-    "untrimmedFilePath": "./dist/bottom.d.ts",
+    "untrimmedFilePath": "./dist/index.d.ts",
   },
   "docModel": {
     "enabled": false,

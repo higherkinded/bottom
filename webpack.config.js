@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     path: PATHS.dist,
-    filename: '[name].js',
+    filename: 'index.js',
     libraryTarget: 'umd',
     library: 'bottom',
   },
