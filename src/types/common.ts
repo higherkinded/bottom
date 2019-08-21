@@ -1,1 +1,1 @@
-export type Args = any[];
+export type Args = Array<{}>;

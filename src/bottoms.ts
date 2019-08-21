@@ -1,8 +1,8 @@
-import Named from './interfaces/Named';
+import INamed from './interfaces/INamed';
 
-import NotImplemented from './types/NotImplemented';
-import Descriptor from './types/Descriptor';
 import { Args } from './types/common';
+import Descriptor from './types/Descriptor';
+import NotImplemented from './types/NotImplemented';
 
 import {
   Callable,
@@ -11,11 +11,9 @@ import {
   Method,
 } from './constants/descriptors';
 
-
 /** Factory for bottom factories. */
-const __bottom = (d: Descriptor) => (n?: string, b?: string) =>
-  <R>(..._: Args): R => { throw new NotImplemented(d, n, b) };
-
+const _bottom = (d: Descriptor) => (n?: string, b?: string) =>
+  <R>(..._: Args): R => { throw new NotImplemented(d, n, b); };
 
 /**
  * Put in place of implementation or in place of tail `return` to indicate that
@@ -29,19 +27,16 @@ const __bottom = (d: Descriptor) => (n?: string, b?: string) =>
  *
  * @throws    `NotImplemented`
  */
-export const bottom = __bottom(Callable)();
+export const bottom = _bottom(Callable)();
 
-
-export const bottomFn = (name: string) => __bottom(Function)(name);
-
+export const bottomFn = (name: string) => _bottom(Function)(name);
 
 export const bottomMethod = (name: string, owner: string) =>
-  __bottom(Method)(name, owner);
+  _bottom(Method)(name, owner);
 
-
-export class Bottom implements Named {
-  name: string = '';
+export class Bottom implements INamed {
+  public name: string = '';
   constructor(..._: Args) {
-    __bottom(Class)(this.name)();
+    _bottom(Class)(this.name)();
   }
 }

@@ -1,6 +1,6 @@
-import Named from '../interfaces/Named';
+import INamed from '../interfaces/INamed';
 
-export default class Descriptor implements Named {
-  name: string;
+export default class Descriptor implements INamed {
+  public name: string;
   constructor(name: string) { this.name = name; }
 }

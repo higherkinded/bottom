@@ -1,5 +1,5 @@
-import Descriptor from './Descriptor';
 import { Class, Function, Method } from '../constants/descriptors';
+import Descriptor from './Descriptor';
 
 const _gNi = (w: Descriptor, n?: string, o?: string): string =>
   `${w.name} '${n}'${o ? (' of ' + o) : ''} is not implemented`;
