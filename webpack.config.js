@@ -3,8 +3,8 @@ var path = require('path');
 var join = path.join;
 
 var PATHS = {
-  src: join(__dirname, 'src'),
-  dist: join(__dirname, 'dist'),
+  src: path.resolve('src'),
+  dist: path.resolve('dist'),
 };
 
 module.exports = {
@@ -12,6 +12,7 @@ module.exports = {
   entry: {
     bottom: join(PATHS.src, 'index.ts'),
   },
+  target: 'node',
   output: {
     path: PATHS.dist,
     filename: 'index.js',
@@ -30,5 +31,7 @@ module.exports = {
   },
   optimization: {
     minimize: true,
+    usedExports: true,
+    concatenateModules: true,
   },
 };

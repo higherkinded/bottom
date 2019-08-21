@@ -24,7 +24,7 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "artifacts:pub": "npm run build && npm run clean && npm publish --access public",
+    "artifacts:pub": "npm run build && npm run clean && npm login && npm publish --access public",
     "artifacts:rm": "rm -r dist",
     "build": "npm run build:safe",
     "build:bundle": "./node_modules/.bin/webpack --display verbose",

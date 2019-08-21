@@ -6,6 +6,7 @@ Bottoms
 NPM](https://img.shields.io/npm/v/@higherkinded/bottom/latest?logo=npm)](https://www.npmjs.com/package/@higherkinded/bottom)
 [![License](https://img.shields.io/github/license/higherkinded/bottom)](https://github.com/higherkinded/bottom/blob/master/LICENSE)
 [![Typedefs](https://img.shields.io/npm/types/@higherkinded/bottom?color=%232299ff&label=%20&logo=typescript)](https://www.typescriptlang.org)
+[![JS Support](https://img.shields.io/badge/%20-JavaScript-%23efc500?logo=javascript&logoColor=%23fff)]()
 
 _A set of easily pluggable and extremely touchy empty definitions._
 

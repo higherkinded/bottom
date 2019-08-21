@@ -1,13 +1,7 @@
 // @public
 export * from './bottoms';
 
-import {
-  Callable,
-  Class,
-  Function,
-  Method,
-} from './constants/descriptors';
-export const descriptors = { Callable, Class, Function, Method };
+export { default as descriptors } from './constants/descriptors';
 
 export { default as Descriptor } from './types/Descriptor';
 export { default as NotImplemented } from './types/NotImplemented';
