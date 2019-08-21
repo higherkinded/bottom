@@ -26,6 +26,30 @@ rewriting this multiple time and, surprisingly, seeing no alternative
 implementations (at all), I've written this library. It covers use cases of both
 TypeScript bottom-related needs and JavaScript bottom-related needs.
 
+## Getting a copy
+
+The first couple of badges under the header both lead to the npm, essentially
+giving that aspect away. But in case you want to copy-paste, here you go!
+
+NPM:
+
+```bash
+npm i @higherkinded/bottom --save
+```
+
+Yarn:
+
+```
+yarn add @higherkinded/bottom
+```
+
+**The type definitions are bundled with the library**, so if you want some for
+your TypeScript project, there's no need to reach for the `@types`, got you
+covered. The whole package (with definition file and comparedly thick source
+map) is around 13 Kb, not to mention that the library itself targets development
+versions only, so I suppose that there's no problem in serving the whole bunch
+at once.
+
 ## How do I?
 
 So how to use it? In case of TypeScript functions, it will be...
